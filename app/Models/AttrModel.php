@@ -45,7 +45,6 @@ class AttrModel extends BaseModel
     use SoftDeletes;
 
     protected $table = 'attr';
-
     public function values():HasMany
     {
         return $this->hasMany(AttrValueModel::class, 'attr_id');
